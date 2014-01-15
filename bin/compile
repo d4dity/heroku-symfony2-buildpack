@@ -83,7 +83,7 @@ EOF
 
 if [  -d www/ext ]; then
    echo "Copying extensions from project"
-   cp www/ext/* /app/php/include/php/ext -v
+   cp www/ext/* /app/php/ext -v
  else
    echo "No extensions to copy."
  fi
