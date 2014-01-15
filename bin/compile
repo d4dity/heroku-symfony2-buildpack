@@ -82,6 +82,7 @@ exec /app/apache/bin/httpd -DNO_DETACH
 EOF
 
 if [  -d www/ext ]; then
+  mkdir /app/php/ext/
    echo "Copying extensions from project"
    cp www/ext/* /app/php/ext -v
  else
